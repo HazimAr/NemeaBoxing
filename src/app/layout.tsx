@@ -87,10 +87,7 @@ export default function RootLayout({
 	return (
 		<html
 			lang="en"
-			className={cn(
-				"min-h-screen text-mid-gray-dark",
-				inter.className
-			)}
+			className={cn("min-h-screen text-mid-gray-dark", inter.className)}
 		>
 			<body className="h-full w-full">
 				<Containers />

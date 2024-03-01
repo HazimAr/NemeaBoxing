@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function Header() {
 	return (
-		<header className="sticky top-0 flex py-2 mx-4">
+		<header className="fixed w-full top-0 flex py-2 px-4 bg-background/50">
 			<Link href="/" className="mr-auto">
-				<Image src="/logo.png" alt="logo" width={100} height={100} />
+				<Image src="/logo.png" alt="logo" width={80} height={80} />
 			</Link>
 			<nav className="font-bold uppercase flex gap-4 items-center">
 				<Link href="/about-us">About Us</Link>
