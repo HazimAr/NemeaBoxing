@@ -16,14 +16,13 @@ export default function Hero() {
 					</h1>
 				</div>
 
-				<div className="flex flex-col gap-2 mt-8 w-fit">
-					<Button className="w-fit h-fit">
-						Free Intro Visit <ChevronRightIcon />
-					</Button>
-					<p className="text-xs text-foreground/50">
-						Starting at $19.99/month
-					</p>
-				</div>
+				<Button className="w-fit h-fit mt-8 text-[2em] group">
+					Free Intro Visit{" "}
+					<ChevronRightIcon
+						size={32}
+						className=" group-hover:translate-x-1 transition"
+					/>
+				</Button>
 			</div>
 			<h1 className="uppercase font-black text-[30em] max-w-[98vw] overflow-hidden whitespace-nowrap text-clip absolute bottom-0 text-foreground/20 z-[-5]">
 				champion
@@ -34,6 +33,7 @@ export default function Hero() {
 				className="boxer absolute right-[5%] scale-x-[-1] z-[-1]"
 				width={1000}
 				height={1024}
+				quality={90}
 			/>
 
 			{/* <h1 className="uppercase text-current/50">champion</h1> */}
