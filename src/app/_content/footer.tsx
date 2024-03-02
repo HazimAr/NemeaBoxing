@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Footer() {
 	return (
-		<footer className="flex justify-center w-full">
+		<footer className="flex justify-center w-full mt-40">
 			<div className="flex py-2 px-4 max-w-7xl">
 				<div className="flex-1">
 					<div className="flex items-center">

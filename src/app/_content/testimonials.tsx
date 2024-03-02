@@ -1,3 +1,3 @@
 export default function Testimonials() {
-	return <></>;
+	return <section></section>;
 }
