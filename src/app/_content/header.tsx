@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Header() {
 	return (
-		<header className="fixed w-full top-0 flex justify-center py-2 px-4 bg-background/75">
+		<header className="fixed w-full top-0 flex justify-center py-2 px-4 bg-background/75 z-50">
 			<div className="max-w-7xl w-full flex">
 				<Link href="/" className="mr-auto flex items-center gap-4">
 					<Image src="/logo.png" alt="logo" width={80} height={80} />

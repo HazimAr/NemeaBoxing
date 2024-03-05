@@ -8,7 +8,7 @@ export default function Footer() {
 	return (
 		<footer className="flex justify-center w-full mt-40">
 			<div className="flex py-2 px-4 max-w-7xl">
-				<div className="flex-1">
+				<div className="flex-2">
 					<div className="flex items-center">
 						<Image
 							src="/logo.png"
@@ -30,7 +30,7 @@ export default function Footer() {
 				</div>
 				<div className="flex-1 flex-col justify-between">
 					<div className="flex">
-						<div className="flex flex-col justify-between">
+						<div className="flex flex-col justify-between pr-12">
 							{[
 								"Programs",
 								"Membership",
@@ -48,7 +48,7 @@ export default function Footer() {
 								</Link>
 							))}
 						</div>
-						<div className="h-[225px] w-[2px] bg-primary mx-4" />
+						<div className="h-[225px] w-[4px] bg-primary mx-4" />
 						<div className="flex flex-col gap-4">
 							<div>
 								<h2 className="uppercase font-bold">
