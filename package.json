@@ -49,6 +49,7 @@
 		"clsx": "^2.1.0",
 		"cmdk": "^0.2.0",
 		"date-fns": "^3.3.1",
+		"embla-carousel-autoplay": "^8.0.0",
 		"embla-carousel-react": "^8.0.0",
 		"lucide-react": "^0.343.0",
 		"mixpanel-browser": "^2.48.1",
