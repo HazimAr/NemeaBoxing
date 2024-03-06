@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Testimonial } from "types";
 import { StarIcon } from "lucide-react";
 import {
