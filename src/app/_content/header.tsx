@@ -13,7 +13,7 @@ export default function Header() {
 						Nemea <span className="text-primary">Boxing</span>
 					</h2>
 				</Link>
-				<nav className="font-bold uppercase flex gap-4 items-center">
+				<nav className="font-bold uppercase gap-4 items-center hidden md:flex">
 					{/* <Link href="/about-us">About Us</Link> */}
 					<Link href="/#programs">Programs</Link>
 					{/* @ts-ignore */}
