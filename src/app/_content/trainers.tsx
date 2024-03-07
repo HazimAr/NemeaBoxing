@@ -11,14 +11,17 @@ const trainers = [
 	{
 		name: "Jose Lara",
 		image: "/jose-lara.jpg",
+		instagram: "https://www.instagram.com/jlara_28/",
 	},
 	{
 		name: "Bryan Jauregui",
 		image: "/bryan-jauregui.jpg",
+		instagram: "https://www.instagram.com/bryanjauregui1/",
 	},
 	{
 		name: "Mike Contreras",
 		image: "/mike-contreras.jpg",
+		instagram: "https://www.instagram.com/theboxingmechanic/",
 	},
 ];
 

@@ -1,7 +1,6 @@
-import { Button } from "@components/ui/button";
+import { SignUpButton } from "@components/signup-dialog";
 import { cn } from "@lib/utils";
 import Image from "next/image";
-import Link from "next/link";
 
 const programs: { title: string; description: string }[] = [
 	{
@@ -35,7 +34,7 @@ const programs: { title: string; description: string }[] = [
 export default function Programs() {
 	return (
 		<section className="flex justify-center">
-			<div className="py-20 px-4 max-w-7xl w-full">
+			<div className="py-20 px-4 max-w-7xl w-full" id="programs">
 				<h1 className="font-bold uppercase">
 					What We <span className="text-primary">Offer!</span>
 				</h1>
@@ -46,7 +45,6 @@ export default function Programs() {
 							title={program.title}
 							description={program.description}
 							image={`/${program.title.split(" ")[0].toLowerCase()}-${program.title.split(" ")[1].toLowerCase()}.jpg`}
-							link={`/${program.title.toLowerCase()}`}
 							odd={i % 2 != 0}
 						/>
 					))}
@@ -60,13 +58,11 @@ function ProgramCard({
 	title,
 	description,
 	image,
-	link,
 	odd,
 }: {
 	title: string;
 	description: string;
 	image: string;
-	link: string;
 	odd: boolean;
 }) {
 	return (
@@ -87,10 +83,8 @@ function ProgramCard({
 			</div>
 			<div className="flex-1 flex flex-col items-center">
 				<h2 className="uppercase font-bold">{title}</h2>
-				<p>{description}</p>
-				<Button className="mt-4" asChild>
-					<Link href={link}>Sign Up Now</Link>
-				</Button>
+				<p className="mb-4">{description}</p>
+				<SignUpButton button="Sign Up" />
 			</div>
 		</div>
 	);

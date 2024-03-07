@@ -1,4 +1,4 @@
-import { Button } from "@components/ui/button";
+import { SignUpButton } from "@components/signup-dialog";
 import { ChevronRightIcon } from "lucide-react";
 import Image from "next/image";
 
@@ -15,14 +15,18 @@ export default function Hero() {
 						<span className="text-primary">Champions</span>
 					</h1>
 				</div>
-
-				<Button className="w-fit h-fit mt-8 text-[2em] group">
-					Free Intro Visit{" "}
-					<ChevronRightIcon
-						size={32}
-						className=" group-hover:translate-x-1 transition"
-					/>
-				</Button>
+				<SignUpButton
+					className="w-fit h-fit mt-8 text-[2em] group"
+					button={
+						<>
+							Free Intro Visit{" "}
+							<ChevronRightIcon
+								size={32}
+								className="group-hover:translate-x-1 transition"
+							/>
+						</>
+					}
+				/>
 			</div>
 			<h1 className="uppercase font-black text-[30em] max-w-[98vw] overflow-hidden whitespace-nowrap text-clip absolute bottom-0 text-foreground/20 z-[-5]">
 				champion
