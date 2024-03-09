@@ -27,7 +27,7 @@ const trainers = [
 
 export default function Trainers() {
 	return (
-		<section className="flex justify-center">
+		<section className="flex justify-center bg-secondary">
 			<div className="py-20 px-8 max-w-7xl w-full">
 				<h1 className="uppercase font-bold mb-8">
 					Meet Your <span className="text-primary">Trainers</span>
