@@ -19,8 +19,8 @@ export default function Page() {
 						<div className="flex flex-col gap-4">
 							<div className="flex gap-2 hover:text-primary">
 								<PhoneIcon />
-								<Link href="tel:+17027204948">
-									702-720-4948
+								<Link href="tel:+1-702-720-4948">
+									+1 702-720-4948
 								</Link>
 							</div>
 							<div className="flex gap-2 hover:text-primary">

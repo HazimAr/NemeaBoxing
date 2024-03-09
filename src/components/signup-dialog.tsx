@@ -42,9 +42,6 @@ export function SignUpButton({
 					<DialogTitle>{title}</DialogTitle>
 				</DialogHeader>
 				<SignUpForm noPrograms={noPrograms} />
-				<DialogFooter>
-					<Button type="submit">Submit</Button>
-				</DialogFooter>
 			</DialogContent>
 		</Dialog>
 	);

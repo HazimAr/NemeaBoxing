@@ -35,7 +35,7 @@ export default function Programs() {
 	return (
 		<section className="flex justify-center">
 			<div className="py-20 px-4 max-w-7xl w-full" id="programs">
-				<h1 className="font-bold uppercase">
+				<h1 className="font-bold uppercase mb-8">
 					What We <span className="text-primary">Offer!</span>
 				</h1>
 				<div className="flex flex-col">

@@ -29,7 +29,7 @@ export default function Trainers() {
 	return (
 		<section className="flex justify-center">
 			<div className="py-20 px-4 max-w-7xl w-full">
-				<h1 className="uppercase font-bold">
+				<h1 className="uppercase font-bold mb-8">
 					Meet Your <span className="text-primary">Trainers</span>
 				</h1>
 				<div className="flex gap-16">

@@ -28,15 +28,11 @@ async function getReviews() {
 	// Creating new context and page.
 
 	const page = await browser.newPage();
-	console.log("going to url");
 	await page.goto(
 		"https://www.google.com/search?q=nemea+boxing+las+vegas&sca_esv=c5f02fd2b2be415a&sxsrf=ACQVn0_f58V4rprrAJUtA0Whgb5Szg61rw%3A1709602419480&ei=c3bmZaP_HKvKkPIPmMGsSA&ved=0ahUKEwjjhK6n_duEAxUrJUQIHZggCwkQ4dUDCBA&uact=5&oq=nemea+boxing+las+vegas&gs_lp=Egxnd3Mtd2l6LXNlcnAiFm5lbWVhIGJveGluZyBsYXMgdmVnYXMyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjICECZIyBJQTFi8DnACeAGQAQCYAZwBoAHpCKoBAzguM7gBA8gBAPgBAZgCDaACqgnCAgcQIxiwAxgnwgIKEAAYRxjWBBiwA8ICDRAAGEcY1gQYyQMYsAPCAg4QABiABBiKBRiSAxiwA8ICChAjGIAEGIoFGCfCAg4QLhiABBjJAxjHARivAcICBRAAGIAEwgIKEAAYgAQYFBiHAsICCxAAGIAEGIoFGIYDwgIdEC4YgAQYyQMYxwEYrwEYlwUY3AQY3gQY4ATYAQGYAwCIBgGQBgq6BgYIARABGBSSBwM4LjWgB-Y8&sclient=gws-wiz-serp#lrd=0x80c8c1f0f2c4662f:0x55eeedab62d4939,1,,,,"
 	);
 
-	console.log(page.url);
-	console.log("waiting for selector");
 	await page.waitForSelector(".gws-localreviews__general-reviews-block");
-	console.log("it's here ! now loop through data...");
 
 	const reviews = await page.evaluate(() => {
 		const reviews: Testimonial[] = [];

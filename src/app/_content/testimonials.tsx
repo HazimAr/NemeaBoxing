@@ -1,3 +1,4 @@
+"use client";
 import { Testimonial } from "types";
 import { StarIcon } from "lucide-react";
 import {
@@ -8,7 +9,7 @@ import {
 	CarouselPrevious,
 } from "@components/ui/carousel";
 import { Card, CardContent } from "@components/ui/card";
-// import Autoplay from "embla-carousel-autoplay";
+import Autoplay from "embla-carousel-autoplay";
 
 export default function Testimonials({
 	testimonials,
@@ -16,36 +17,38 @@ export default function Testimonials({
 	testimonials: Testimonial[];
 }) {
 	return (
-		<section className="flex justify-center">
+		<section className="flex justify-center" id="testimonials">
 			<div className="py-20 px-4 max-w-7xl w-full">
-				<h1 className="uppercase font-bold">
-					What Our <span className="text-primary">Members</span> Say
+				<h1 className="uppercase font-bold mb-8">
+					Our <span className="text-primary">Google Reviews</span> Say
 				</h1>
 				<div className="flex justify-center">
 					<Carousel
 						opts={{
 							align: "start",
+							loop: true,
 						}}
-						plugins={
-							[
-								// Autoplay({
-								// 	delay: 2000,
-								// }),
-							]
-						}
+						plugins={[
+							Autoplay({
+								delay: 3000,
+							}),
+						]}
+						className="max-w-7xl w-full"
 					>
 						<CarouselContent>
 							{testimonials.map((testimonial, index) => (
 								<CarouselItem
 									key={index}
-									className="basis-1/1 md:basis-1/2 lg:basis-1/3"
+									className="xl:basis-1/2 2xl:basis-1/3"
 								>
-									<Card className="h-[200px]">
-										<CardContent>
-											<p className="text-ellipses">
+									<Card>
+										<CardContent className="flex flex-col h-[200px] py-2">
+											<p className="text-ellipses max-h-[100px] overflow-hidden">
 												{testimonial.testimonial}
 											</p>
-											<h2>{testimonial.name}</h2>
+											<h3 className="mt-auto">
+												{testimonial.name}
+											</h3>
 											<div className="flex items-center gap-1">
 												{Array.from(
 													{ length: 5 },
@@ -62,7 +65,7 @@ export default function Testimonials({
 													)
 												)}
 											</div>
-											<p className="test-foreground/50">
+											<p className="text-foreground/50">
 												{testimonial.date}
 											</p>
 										</CardContent>
@@ -78,4 +81,3 @@ export default function Testimonials({
 		</section>
 	);
 }
-
