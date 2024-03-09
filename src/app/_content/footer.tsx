@@ -33,7 +33,7 @@ export default function Footer() {
 						</div>
 						<Image
 							src="/boxer.png"
-							alt="Floyd Mayweather punching"
+							alt="Floyd MayWeather punching"
 							className="boxer hidden md:block "
 							width={500}
 							height={500}
