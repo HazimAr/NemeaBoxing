@@ -1,5 +1,4 @@
 import { SignUpButton } from "@components/signup-dialog";
-import { ModeToggle } from "@components/toggle-mode";
 import { ChevronRightIcon, FacebookIcon, InstagramIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -92,7 +91,6 @@ export default function Footer() {
 								<Link href="https://www.facebook.com/p/Nemea-Boxing-Gym-100092228926446">
 									<FacebookIcon />
 								</Link>
-								<ModeToggle />
 							</div>
 						</div>
 					</div>
