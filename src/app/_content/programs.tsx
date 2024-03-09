@@ -34,7 +34,7 @@ const programs: { title: string; description: string }[] = [
 export default function Programs() {
 	return (
 		<section className="flex justify-center">
-			<div className="py-20 px-4 max-w-7xl w-full" id="programs">
+			<div className="py-20 px-8 max-w-7xl w-full" id="programs">
 				<h1 className="font-bold uppercase mb-8">
 					What We <span className="text-primary">Offer!</span>
 				</h1>
@@ -81,10 +81,10 @@ function ProgramCard({
 					className="rounded-xl"
 				/>
 			</div>
-			<div className="flex-1 flex flex-col items-center">
+			<div className="flex-1 flex flex-col items-start md:items-center py-8 md:py-0">
 				<h2 className="uppercase font-bold">{title}</h2>
 				<p className="mb-4">{description}</p>
-				<SignUpButton button="Sign Up" />
+				<SignUpButton button="Sign Up" className="w-full md:w-fit" />
 			</div>
 		</div>
 	);

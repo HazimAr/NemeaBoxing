@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Footer() {
 	return (
 		<>
-			<section className="flex flex-col items-center justify-center bg-primary py-8 font-bold">
+			<section className="flex flex-col items-center justify-center bg-primary py-8 font-bold text-center">
 				<h1>Upgrade ☝️ your skills today!</h1>
 				<h3>⚒️ Build up your boxing knowledge.</h3>
 				<SignUpButton
@@ -18,7 +18,7 @@ export default function Footer() {
 				/>
 			</section>
 			<footer className="flex justify-center w-full pt-8">
-				<div className="flex py-2 px-4 max-w-7xl">
+				<div className="flex flex-col md:flex-row py-2 px-4 max-w-7xl">
 					<div className="flex-2">
 						<div className="flex items-center">
 							<Image
@@ -27,20 +27,20 @@ export default function Footer() {
 								width={80}
 								height={80}
 							/>
-							<h3 className="font-bold ml-4">
+							<h2 className="font-bold ml-4 text-center w-full md:w-fit">
 								Nemea{" "}
 								<span className="text-primary">Boxing</span>
-							</h3>
+							</h2>
 						</div>
 						<Image
 							src="/boxer.png"
 							alt="Floyd Mayweather punching"
-							className="boxer"
+							className="boxer hidden md:block "
 							width={500}
 							height={500}
 						/>
 					</div>
-					<div className="flex-1 flex-col justify-between">
+					<div className="flex-1 flex-col justify-between mt-8 md:mt-0">
 						<div className="flex mb-8">
 							<div className="flex flex-col justify-between pr-12 font-bold">
 								<Link href="/#testimonials">Testimonials</Link>
@@ -58,7 +58,7 @@ export default function Footer() {
 							<div className="flex flex-col gap-4">
 								<div>
 									<h2 className="uppercase font-bold">
-										Give us a call 📞
+										Call Us 📞
 									</h2>
 
 									<Link href="tel:1-702-720-4948">
@@ -96,17 +96,16 @@ export default function Footer() {
 							</div>
 						</div>
 					</div>
-
-					<style>
-						{`
+				</div>
+			</footer>
+			<style>
+				{`
 					.boxer {
 						-webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 25%);
 						mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 25%);
 					}
 				`}
-					</style>
-				</div>
-			</footer>
+			</style>
 		</>
 	);
 }

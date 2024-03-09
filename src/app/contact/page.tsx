@@ -1,16 +1,16 @@
 import SignUpForm from "@components/signup-form";
 import {
-	PhoneIcon,
-	MapPinIcon,
-	InstagramIcon,
 	FacebookIcon,
+	InstagramIcon,
+	MapPinIcon,
+	PhoneIcon,
 } from "lucide-react";
 import Link from "next/link";
 
 export default function Page() {
 	return (
 		<section className="flex justify-center">
-			<div className="py-20 px-4 max-w-7xl w-full">
+			<div className="py-20 px-8 max-w-7xl w-full">
 				<div className="flex">
 					<div className="flex flex-col flex-1 gap-8">
 						<h1>

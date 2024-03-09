@@ -28,11 +28,11 @@ const trainers = [
 export default function Trainers() {
 	return (
 		<section className="flex justify-center">
-			<div className="py-20 px-4 max-w-7xl w-full">
+			<div className="py-20 px-8 max-w-7xl w-full">
 				<h1 className="uppercase font-bold mb-8">
 					Meet Your <span className="text-primary">Trainers</span>
 				</h1>
-				<div className="flex gap-16">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
 					{trainers.map((trainer) => (
 						<div className="flex-col w-full" key={trainer.name}>
 							<div className="w-full h-[150px] relative">

@@ -10,7 +10,7 @@ export default function Page() {
 				<Image src="/gym.jpg" alt="nemea gym" fill objectFit="cover" />
 			</div>
 			<section className="flex justify-center">
-				<div className="py-20 px-4 max-w-7xl w-full">
+				<div className="py-20 px-8 max-w-7xl w-full">
 					<h1 className="font-bold">
 						Nemea <span className="text-primary">Boxing</span> Gym
 					</h1>
@@ -30,7 +30,7 @@ export default function Page() {
 				</div>
 			</section>
 			<section className="flex justify-center bg-secondary">
-				<div className="py-20 px-4 max-w-7xl w-full">
+				<div className="py-20 px-8 max-w-7xl w-full">
 					<h1 className="font-bold">
 						About <span className="text-primary">Us</span>
 					</h1>
@@ -71,7 +71,6 @@ export default function Page() {
 					</div>
 				</div>
 			</section>
-
 		</div>
 	);
 }

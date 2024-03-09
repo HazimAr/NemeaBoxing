@@ -1,6 +1,5 @@
 "use client";
-import { Testimonial } from "types";
-import { StarIcon } from "lucide-react";
+import { Card, CardContent } from "@components/ui/card";
 import {
 	Carousel,
 	CarouselContent,
@@ -8,8 +7,9 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from "@components/ui/carousel";
-import { Card, CardContent } from "@components/ui/card";
 import Autoplay from "embla-carousel-autoplay";
+import { StarIcon } from "lucide-react";
+import { Testimonial } from "types";
 
 export default function Testimonials({
 	testimonials,
@@ -18,7 +18,7 @@ export default function Testimonials({
 }) {
 	return (
 		<section className="flex justify-center" id="testimonials">
-			<div className="py-20 px-4 max-w-7xl w-full">
+			<div className="py-20 px-8 max-w-7xl w-full">
 				<h1 className="uppercase font-bold mb-8">
 					Our <span className="text-primary">Google Reviews</span> Say
 				</h1>
