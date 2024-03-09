@@ -10,7 +10,7 @@
 	"keywords": [],
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build",
+		"build": "npx puppeteer browsers install chrome && next build",
 		"start": "next start",
 		"postbuild": "next-sitemap",
 		"clean": "npx prettier --write ."
