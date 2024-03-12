@@ -6,17 +6,17 @@ const programs: { title: string; description: string }[] = [
 	{
 		title: "Adult Boxing (Ages 18+)",
 		description:
-			"Our Las Vegas gym offers boxing classes to get fit, boxing classes for those who want to improve their boxing skills and boxing classes for the individuals who want to compete at a competitive level.",
+			"Join our Las Vegas gym for Adult Boxing (Ages 18+). Whether you're aiming to get fit, improve your boxing skills, or compete at a competitive level, we have classes tailored to your goals. Get started today!",
 	},
 	{
 		title: "Teen Boxing (Ages 13-17)",
 		description:
-			"Our youth boxing program is designed to inspire and empower young athletes, offering an engaging and safe environment for pre-teens and teens to learn the art of boxing in Las Vegas. Focused on developing physical fitness, mental discipline, and self-confidence, this program is perfect for youths of all skill levels.",
+			"Join our youth boxing program in Las Vegas! Designed for pre-teens and teens, it offers a safe and engaging environment to learn the art of boxing. Perfect for all skill levels, our program focuses on physical fitness, mental discipline, and self-confidence. Unlock your potential today!",
 	},
 	{
 		title: "Kids Boxing (Ages 6-12)",
 		description:
-			"Our kids boxing program is tailored for young enthusiasts eager to learn the art of boxing. This program focuses on developing fundamental boxing skills, promoting physical fitness, and instilling discipline and confidence in a fun and safe environment.",
+			"Discover the thrill of boxing in a safe and fun environment! Our program is designed to teach fundamental boxing skills while promoting physical fitness and fostering discipline and confidence. Join us and unleash your child's potential today!",
 	},
 
 	{
