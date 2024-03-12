@@ -36,11 +36,11 @@ export default function Header() {
 	return (
 		<header
 			className={cn(
-				"w-full top-0 flex items-center justify-center py-2 px-4 bg-background/75 z-50",
+				"w-full top-0 flex items-center justify-center py-2 bg-background/75 z-50",
 				pathname == "/" ? "fixed" : "sticky"
 			)}
 		>
-			<div className="max-w-7xl w-full flex items-center">
+			<div className="max-w-7xl px-6 w-full flex items-center">
 				<Link href="/" className="mr-auto flex items-center gap-4">
 					<Image src="/logo.png" alt="logo" width={80} height={80} />
 					<h2 className="font-bold">
