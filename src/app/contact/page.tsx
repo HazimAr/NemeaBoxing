@@ -13,7 +13,7 @@ export default function Page() {
 			<div className="py-20 px-8 max-w-7xl w-full">
 				<div className="flex">
 					<div className="flex flex-col flex-1 gap-8">
-						<h1>
+						<h1 className="font-bold">
 							Contact <span className="text-primary">Us</span>
 						</h1>
 						<div className="flex flex-col gap-4">
