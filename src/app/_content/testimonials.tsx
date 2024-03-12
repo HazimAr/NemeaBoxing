@@ -26,6 +26,7 @@ export default function Testimonials({
 					<Carousel
 						opts={{
 							align: "start",
+							
 							loop: true,
 						}}
 						plugins={[
@@ -73,8 +74,6 @@ export default function Testimonials({
 								</CarouselItem>
 							))}
 						</CarouselContent>
-						<CarouselPrevious />
-						<CarouselNext />
 					</Carousel>
 				</div>
 			</div>
