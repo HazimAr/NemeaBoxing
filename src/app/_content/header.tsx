@@ -13,21 +13,24 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const navItems = [
-	<Link href="/about">About Us</Link>,
-
-	<Link href="/#programs">Programs</Link>,
-	<SignUpButton
-		button="Pricing"
-		title="Where do you want us to send our membership pricing information?"
-		// @ts-ignore
-		variant="link"
-		className="text-foreground hover:no-underline text-md w-fit p-0"
-	/>,
-	<Button>
-		<Link href="/contact">Contact</Link>
-	</Button>,
-];
+const navItems = (
+	<>
+		<Link href="/about">About Us</Link>,
+		<Link href="/#programs">Programs</Link>,
+		<SignUpButton
+			button="Pricing"
+			title="Where do you want us to send our membership pricing information?"
+			// @ts-ignore
+			variant="link"
+			className="text-foreground hover:no-underline text-md w-fit p-0"
+		/>
+		,
+		<Button>
+			<Link href="/contact">Contact</Link>
+		</Button>
+		,
+	</>
+);
 
 export default function Header() {
 	const pathname = usePathname();
