@@ -24,7 +24,6 @@ export default function Testimonials({
 					<Carousel
 						opts={{
 							align: "start",
-							
 							loop: true,
 						}}
 						plugins={[
