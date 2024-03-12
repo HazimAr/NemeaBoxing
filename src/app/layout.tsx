@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 		default: "Nemea Boxing - The #1 Boxing Gym In Las Vegas",
 	},
 	description: "Description",
-	category: "software",
+	category: "sports",
 	metadataBase: new URL("https://nemeaboxing.com"),
 	openGraph: {
 		type: "website",
