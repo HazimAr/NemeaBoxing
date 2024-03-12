@@ -42,8 +42,9 @@ export default function Footer() {
 					<div className="flex-1 flex-col justify-between mt-8 md:mt-0">
 						<div className="flex mb-8">
 							<div className="flex flex-col justify-between pr-12 font-bold">
-								<Link href="/#testimonials">Testimonials</Link>
 								<Link href="/about">About Us</Link>
+								<Link href="/contact">Contact</Link>
+								<Link href="/#testimonials">Testimonials</Link>
 								<Link href="/#programs">Programs</Link>
 								<SignUpButton
 									button="Pricing"

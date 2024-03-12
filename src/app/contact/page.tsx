@@ -11,12 +11,12 @@ export default function Page() {
 	return (
 		<section className="flex justify-center">
 			<div className="py-20 px-8 max-w-7xl w-full">
-				<div className="flex">
-					<div className="flex flex-col flex-1 gap-8">
+				<div className="flex flex-col md:flex-row gap-4">
+					<div className="flex flex-col flex-1 ">
 						<h1 className="font-bold">
 							Contact <span className="text-primary">Us</span>
 						</h1>
-						<div className="flex flex-col gap-4">
+						<div className="flex flex-col gap-4 mb-4">
 							<div className="flex gap-2 hover:text-primary">
 								<PhoneIcon />
 								<Link href="tel:+1-702-720-4948">
