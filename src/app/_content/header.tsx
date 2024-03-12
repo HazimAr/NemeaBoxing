@@ -3,16 +3,12 @@ import { SignUpButton } from "@components/signup-dialog";
 import { Button } from "@components/ui/button";
 import {
 	Drawer,
-	DrawerClose,
 	DrawerContent,
-	DrawerDescription,
 	DrawerFooter,
-	DrawerHeader,
-	DrawerTitle,
 	DrawerTrigger,
 } from "@components/ui/drawer";
 import { cn } from "@lib/utils";
-import { MenuIcon, MenuSquareIcon } from "lucide-react";
+import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
