@@ -3,6 +3,7 @@ import { SignUpButton } from "@components/signup-dialog";
 import { Button } from "@components/ui/button";
 import {
 	Drawer,
+	DrawerClose,
 	DrawerContent,
 	DrawerFooter,
 	DrawerTrigger,
@@ -13,23 +14,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const navItems = (
-	<>
-		<Link href="/about">About Us</Link>
-		<Link href="/#programs">Programs</Link>
-		<SignUpButton
-			button="Pricing"
-			title="Where do you want us to send our membership pricing information?"
-			// @ts-ignore
-			variant="link"
-			className="text-foreground hover:no-underline text-md w-fit p-0"
-		/>
+const navItems = [
+	<a href="/about">About Us</a>,
+	<a href="/#programs">Programs</a>,
 
-		<Button>
-			<Link href="/contact">Contact</Link>
-		</Button>
-	</>
-);
+	<a href="/contact">Contact</a>,
+	<SignUpButton
+		button="Pricing"
+		title="Where do you want us to send our membership pricing information?"
+		// @ts-ignore
+		variant="link"
+		className="text-foreground hover:no-underline text-md font-normal normal-case w-fit h-fit p-0"
+	/>,
+];
 
 export default function Header() {
 	const pathname = usePathname();
@@ -48,7 +45,9 @@ export default function Header() {
 					</h2>
 				</Link>
 				<nav className="font-bold uppercase gap-4 items-center hidden md:flex">
-					{navItems}
+					{navItems.map((item, i) => (
+						<div key={i}>{item}</div>
+					))}
 				</nav>
 				<Drawer>
 					<DrawerTrigger className="flex md:hidden" asChild>
@@ -59,7 +58,9 @@ export default function Header() {
 					<DrawerContent>
 						<div className="mx-auto w-full max-w-sm">
 							<div className="p-4 pb-0 flex flex-col gap-2 items-center">
-								{navItems}
+								{navItems.map((item, i) => (
+									<div key={item}>{item}</div>
+								))}
 							</div>
 							<DrawerFooter>
 								<SignUpButton button="Free Intro Visit" />

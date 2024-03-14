@@ -7,7 +7,14 @@ export default function Page() {
 				<h3>The Best Boxing Gym in Las Vegas</h3>
 			</section>
 			<div className="h-[540px] relative">
-				<Image src="/gym.jpg" alt="nemea gym" fill objectFit="cover" />
+				<Image
+					src="/gym.jpg"
+					alt="nemea gym"
+					fill
+					style={{
+						objectFit: "cover",
+					}}
+				/>
 			</div>
 			<section className="flex justify-center">
 				<div className="py-20 px-8 max-w-7xl w-full">
