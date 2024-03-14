@@ -3,7 +3,6 @@ import { SignUpButton } from "@components/signup-dialog";
 import { Button } from "@components/ui/button";
 import {
 	Drawer,
-	DrawerClose,
 	DrawerContent,
 	DrawerFooter,
 	DrawerTrigger,
