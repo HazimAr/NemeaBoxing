@@ -57,8 +57,8 @@ export default function Header() {
 					<DrawerContent>
 						<div className="mx-auto w-full max-w-sm">
 							<div className="p-4 pb-0 flex flex-col gap-2 items-center">
-								{navItems.map((item, i) => (
-									<div key={item}>{item}</div>
+								{navItems.map((item) => (
+									<div key={String(item)}>{item}</div>
 								))}
 							</div>
 							<DrawerFooter>
