@@ -20,6 +20,7 @@ import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "./ui/button";
+import { sendText } from "@lib/sendText";
 
 enum Program {
 	Kids = "kids-boxing",
@@ -58,14 +59,19 @@ export default function SignUpForm({ noPrograms = false }) {
 	});
 
 	// 2. Define a submit handler.
-	function onSubmit(values: z.infer<typeof formSchema>) {
+	async function onSubmit(values: z.infer<typeof formSchema>) {
 		// Do something with the form values.
 		// ✅ This will be type-safe and validated.
+		await sendText({
+			body: `New lead from ${values.firstName} ${values.lastName}!\nEmail: ${values.email}\nPhone: ${values.phone}\nProgram: ${values.program}`,
+			to: "7029291601",
+		});
+
 		toast.success("You have successfully submitted the form! 🎉");
 		toast.success("You will be contacted shortly! 📞");
 		form.reset();
-		console.log(values);
 	}
+
 	return (
 		<Form {...form}>
 			<form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2">
