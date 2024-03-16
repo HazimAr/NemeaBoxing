@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 		description: "",
 		images: [
 			{
-				url: "/logo.svg",
+				url: "/logo.png",
 				width: 400,
 				height: 400,
 				alt: "",
