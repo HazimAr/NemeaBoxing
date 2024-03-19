@@ -71,6 +71,33 @@ export default function SignUpForm({ noPrograms = false }) {
 		toast.success("You will be contacted shortly! 📞");
 		form.reset();
 	}
+	return (
+		<>
+			<iframe
+				src="https://link.localbestgyms.com/widget/form/ThOJk3ISw2RyNker03X1"
+				style={{
+					width: "100%",
+					height: "800px",
+					border: "none",
+					borderRadius: "4px",
+				}}
+				id="inline-ThOJk3ISw2RyNker03X1"
+				data-layout="{'id':'INLINE'}"
+				data-trigger-type="alwaysShow"
+				data-trigger-value=""
+				data-activation-type="alwaysActivated"
+				data-activation-value=""
+				data-deactivation-type="neverDeactivate"
+				data-deactivation-value=""
+				data-form-name="Opt-in Form "
+				data-height="609"
+				data-layout-iframe-id="inline-ThOJk3ISw2RyNker03X1"
+				data-form-id="ThOJk3ISw2RyNker03X1"
+				title="Opt-in Form "
+			></iframe>
+			<script src="https://link.localbestgyms.com/js/form_embed.js"></script>
+		</>
+	);
 
 	return (
 		<Form {...form}>
