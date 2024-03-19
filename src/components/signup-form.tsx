@@ -77,7 +77,7 @@ export default function SignUpForm({ noPrograms = false }) {
 				src="https://link.localbestgyms.com/widget/form/ThOJk3ISw2RyNker03X1"
 				style={{
 					width: "100%",
-					height: "800px",
+					height: "700px",
 					border: "none",
 					borderRadius: "4px",
 				}}
