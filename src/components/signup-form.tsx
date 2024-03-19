@@ -94,6 +94,7 @@ export default function SignUpForm({ noPrograms = false }) {
 				data-layout-iframe-id="inline-ThOJk3ISw2RyNker03X1"
 				data-form-id="ThOJk3ISw2RyNker03X1"
 				title="Opt-in Form "
+				// sandbox="allow-forms allow-scripts"
 			></iframe>
 			<script src="https://link.localbestgyms.com/js/form_embed.js"></script>
 		</>
