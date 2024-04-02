@@ -64,7 +64,7 @@ export default function SignUpForm({ noPrograms = false }) {
 		// ✅ This will be type-safe and validated.
 		await sendText({
 			body: `New lead from ${values.firstName} ${values.lastName}!\nEmail: ${values.email}\nPhone: ${values.phone}\nProgram: ${values.program}`,
-			to: "7029291601",
+			to: "7024171576",
 		});
 
 		toast.success("You have successfully submitted the form! 🎉");
