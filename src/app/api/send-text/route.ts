@@ -1,4 +1,4 @@
-import { sendText } from "@lib/sendText";
+// import { sendText } from "@lib/sendText";
 
 export async function POST(request: Request) {
 	const body = await request.json();
@@ -8,8 +8,8 @@ export async function POST(request: Request) {
 	// 	body,
 	// });
 
-	if (!response.errorCode)
-		return new Response(response.errorMessage, { status: 500 });
+	// if (!response.errorCode)
+	// 	return new Response(response.errorMessage, { status: 500 });
 
 	return new Response(null, { status: 200 });
 }
