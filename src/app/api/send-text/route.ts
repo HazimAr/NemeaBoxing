@@ -6,8 +6,6 @@ export async function POST(request: Request) {
 		to: "7029291601",
 		body,
 	});
-	if (response.error) {
-		return new Response(response.error, { status: 400 });
-	}
-	return new Response(response.message, { status: 200 });
+
+	return new Response(null, { status: 200 });
 }
