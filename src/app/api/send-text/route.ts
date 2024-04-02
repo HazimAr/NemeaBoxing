@@ -7,9 +7,8 @@ export async function POST(request: Request) {
 		body,
 	});
 
-	if (!response.errorCode) {
+	if (!response.errorCode)
 		return new Response(response.errorMessage, { status: 500 });
-	}
 
 	return new Response(null, { status: 200 });
 }
